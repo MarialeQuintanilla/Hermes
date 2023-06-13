@@ -45,12 +45,18 @@ html, body {
   overflow-y: auto;
 }
 
-.wrapper .form .bot-inbox,
-.wrapper .form .user-inbox {
+.wrapper .form .bot-inbox {
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
 }
+.wrapper .form .user-inbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
 
 .wrapper .form .icon {
   height: 40px;
