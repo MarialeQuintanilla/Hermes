@@ -1,6 +1,6 @@
 <?php
 // conectando a la base de datos
-$conn = mysqli_connect("localhost", "root", "", "chatbot") or die("Database Error");
+$conn = mysqli_connect("localhost", "root", "", "kosmos") or die("Database Error");
 
 // obteniendo el mensaje del usuario a través de ajax
 $getMesg = mysqli_real_escape_string($conn, $_POST['text']);
@@ -17,7 +17,11 @@ if (mysqli_num_rows($run_query) > 0) {
     $replay = $fetch_data['replies'];
     echo $replay;
 } else {
-    echo '¡Lo siento, no puedo ayudarte con este inconveniente! Favor, vuelve al sitio web o elige una opción correcta. Elige una opción numérica:</br>
-    <a href="https://www.correos.gob.bo/" style="color: white;">Contacto</a>';
+    if ($getMesg == "") {
+        echo "Por favor, elige una opción numérica.";
+    } else {
+        echo 'Lo siento, elige una opción correcta.<br>Elige una opción numérica:</br>
+        <a href="https://www.correos.gob.bo/" style="color: white;">Contacto</a>';
+    }
 }
-
+?>
