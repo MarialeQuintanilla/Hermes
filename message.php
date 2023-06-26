@@ -1,12 +1,12 @@
 <?php
 // conectando a la base de datos
-$conn = mysqli_connect("localhost", "root", "", "kosmos") or die("Database Error");
+$conn = mysqli_connect("localhost", "root", "", "chatbot") or die("Database Error");
 
 // obteniendo el mensaje del usuario a través de ajax
 $getMesg = mysqli_real_escape_string($conn, $_POST['text']);
 
 //comprobando la consulta del usuario a la consulta de la base de datos
-$check_data = "SELECT replies FROM snvi2f_chatbot WHERE queries LIKE '%$getMesg%'";
+$check_data = "SELECT replies FROM chatbot WHERE queries LIKE '%$getMesg%'";
 $run_query = mysqli_query($conn, $check_data) or die("Error");
 
 // si la consulta del usuario coincide con la consulta de la base de datos, mostraremos la respuesta; de lo contrario, irá a otra declaración

@@ -11,6 +11,13 @@
 </head>
 
 <body>
+<style>
+    background-image: url("1.jpg");
+    background-size: cover;
+    background-position: center;
+    /* Ajusta otras propiedades según tus necesidades */
+  
+</style>
     <div class="wrapper">
         <!-- <img src="img/agbc4.png" alt="Logo AGBC" class="logo"> -->
         <div class="title">ChatBot AGBC</div>
@@ -30,9 +37,9 @@
                         5. Como Rotular Un Envio Tradicional<br>
                         6. Peso Volumetrico del paquete<br>
                         7. Horarios de Atencion<br>
-                         8. Precios de Casillas<br>
+                        8. Precios de Casillas<br>
                         9. Volver Pagina Web<br>
-                        0. Volver al Menu Principal<br>
+                        0. Si tu pregunta no se encuentra comunicate con nosotros al numero 76457323<br>
                         Todo servicio que se brinda en este chat es solo de consultas<br>
                     </p>
                 </div>
