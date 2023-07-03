@@ -12,7 +12,7 @@
 
 <body>
 <style>
-    background-image: url("1.jpg");
+    background-image: url("1.png");
     background-size: cover;
     background-position: center;
     /* Ajusta otras propiedades según tus necesidades */

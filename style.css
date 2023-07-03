@@ -16,14 +16,14 @@
     place-items: center;
 } */
 html, body {
-    background-image: url('1.jpg');
+    background-image: url('1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     display: grid;
     height: 100%;
     place-items: center;
-    justify-content: flex-end; /* Mover todo el contenedor a la derecha */
+    /* justify-content: flex-end; Mover todo el contenedor a la derecha */
   }
   
 
